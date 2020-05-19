@@ -1,96 +1,103 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {box-sizing: border-box}
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167122673-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-/* Set height of body and the document to 100% */
+  gtag('config', 'UA-167122673-1');
+</script>
+    <title>Justice For Carry</title>
+    <link rel="icon" type="image/png" href="./images/ic_favicon.png">
+ </head>
+<style>
 body, html {
   height: 100%;
   margin: 0;
-  font-family: Arial;
 }
 
-/* Style tab links */
-.tablink {
-  background-color: #555;
-  color: white;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
-  width: 25%;
-}
-
-.tablink:hover {
-  background-color: #777;
-}
-
-/* Style the tab content (and add height:100% for full page content) */
-.tabcontent {
-  color: white;
-  display: none;
-  padding: 100px 20px;
+.bgimg {
+  background-color: #000000;
   height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
 }
 
-#'We ❤ Carry' {background-color: red;}
-#News {background-color: green;}
-#Contact {background-color: blue;}
-#About {background-color: orange;}
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+  
+.bottomright {
+  position: absolute;
+  bottom: 0;
+  right: 16px;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+  background: #FFF;
+  border: none;
+  height: 0.5vh;
+}
+
+h1, p {
+  color: #FFFFFF
+}
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: white;
+  text-decoration: none;
+} 
+
 </style>
-</head>
 <body>
 
-<button class="tablink" onclick="openPage('We ❤ Carry', this, 'red')">Home</button>
-<button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">News</button>
-<button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
-<button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
-
-<div id="We ❤ Carry" class="tabcontent">
-  <h3>We ❤ Carry</h3>
-  <p>Home is where the heart is..</p>
-  <!-- Badge Code - Do Not Change The Code -->
-<a class="hitCounter" target="_blank" title="Hit counter" data-name="e44fb079d2b672396192654ed371d246|1|ip|1|#000000|#ffffff|large|s-hit">Hit Counter</a><script>document.write("<script type='text/javascript' src='https://visitorshitcounter.com/js/hitCounter.js?v="+Date.now()+"'><\/script>");</script>
-<!-- Badge Code End Here -->
+<div class="bgimg">
+  <div class="middle">
+    <h1>JALDI TABAHI MACHEGI</h1>
+    <hr>
+    <a href="https://www.google.com/search?q=%23justiceforcarry&oq=%23justiceforcarry" target="_blank"><p>#JusticeForCarry</p></a>
+  </div>
 </div>
 
-<div id="News" class="tabcontent">
-  <h3>News</h3>
-  <p>Some news this fine day!</p> 
-</div>
-
-<div id="Contact" class="tabcontent">
-  <h3>Contact</h3>
-  <p>Get in touch, or swing by for a cup of coffee.</p>
-</div>
-
-<div id="About" class="tabcontent">
-  <h3>About</h3>
-  <p>Who we are and what we do.</p>
-</div>
-
-<script>
-function openPage(pageName,elmnt,color) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(pageName).style.display = "block";
-  elmnt.style.backgroundColor = color;
-}
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
-   
 </body>
-</html> 
+</html>
